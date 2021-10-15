@@ -8,7 +8,7 @@ let inputadultos = document.getElementById("adultos")
 
 let inputcriancas = document.getElementById("criancas")
 
-let inputtempop = document.getElementById("duracao")
+let inputtime = document.getElementById("duracao")
 
 let resultado = document.getElementById("resposta")
 
@@ -18,13 +18,13 @@ function calcular() {
 
     let crianca = inputcriancas.value;
 
-    let duracao = inputempop.value;
+    let duracao = inputtime.value;
 
-    let = qtecarne = carnepp(duracao) * adultos + (carnepp(duracao) / 2 * crianca)
+    let qtecarne = carnepp(duracao) * adultos + (carnepp(duracao) / 2 * crianca)
 
-    let = qtecerveja = cervejapp(duracao) * adultos
+    let  qtecerveja = cervejapp(duracao) * adultos
 
-    let = qtebebida = bebidapp(duracao) * adultos + (bebidapp(duracao) / 2 * crianca)
+    let  qtebebida = bebidapp(duracao) * adultos + (bebidapp(duracao) / 2 * crianca)
 
     resultado.innerHTML = `<p>${qtecarne}g de carne</p>`
 
