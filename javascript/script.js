@@ -38,7 +38,9 @@ function calcular() {
 
         if(duracao>=6){
             return 650
-        }else{400}
+        }else{
+            400
+        }
 
     }
 
@@ -46,7 +48,9 @@ function calcular() {
 
         if(duracao>=6){
             return 2000
-        }else{1200}
+        }else{
+            1200
+        }
 
     }
 
@@ -54,7 +58,8 @@ function calcular() {
 
         if(duracao>=6){
             return 1500
-        }else{1000}
+        }else {
+            return 1000}
 
     }
 
