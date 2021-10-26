@@ -14,7 +14,7 @@ let resultado = document.getElementById("resposta")
 
 function calcular() {
 
-    let adultos = inputadultos.value;
+    let adultos  = inputadultos.value;
 
     let crianca = inputcriancas.value;
 
@@ -26,11 +26,11 @@ function calcular() {
 
     let  qtebebida = bebidapp(duracao) * adultos + (bebidapp(duracao) / 2 * crianca)
 
-    resultado.innerHTML = `<p>${qtecarne}g de carne</p>`
+    resultado.innerHTML = `<p>${qtecarne/1000} g de carne </p>`
 
-    resultado.innerHTML += `<p>${qtecerveja}g de carne</p>`
+    resultado.innerHTML += `<p>${Math.ceil(qtecerveja/355)} latas de cerveja</p>`
 
-    resultado.innerHTML += `<p>${qtebebida}g de carne</p>`
+    resultado.innerHTML += `<p>${Math.ceil(qtebebida/2000)} Garrafas de bebidas</p>`
 
 
 

@@ -1,5 +1,9 @@
 body{
-    background:url(assets/papel\ de\ parede.jpg);
+    background:black;
+
+    
+ 
+   
     margin:0;
     padding: 0;
 }
@@ -51,5 +55,14 @@ input:hover{
 }
 
 #resposta{
+    
+ 
+    font-family: "Poppins", sans-serif;
+    text-align: center;
     color: white;
+    width:  auto;
+    margin-top: 1.5rem;
+    
+    font-weight: 900;
+
 }
