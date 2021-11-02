@@ -44,6 +44,7 @@ button{
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
+    transition: 3s;
 }
 
 button:hover{
@@ -52,6 +53,7 @@ button:hover{
 
 input:hover{
     background: rgba(128, 128, 128, 0.699);
+
 }
 
 #resposta{

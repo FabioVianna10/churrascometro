@@ -1,8 +1,8 @@
-// Carne - 400gr por pessoa + de 6horas - 650
+// Carne - 400gr por pessoa + de 6horas - 650gr
 // Cerveja - 1200ml por Pessoa + 6 horas - 2000ml
 // Refrigerante/água - 1000ml por pessoa + 6 horas 1500ml
 
-// Crianças valem por 0,5
+// Crianças valem pela metade -  0,5
 
 let inputadultos = document.getElementById("adultos")
 
@@ -14,11 +14,11 @@ let resultado = document.getElementById("resposta")
 
 function calcular() {
 
-    let adultos  = inputadultos.value;
+    let adultos  = parseInt(inputadultos.value);
 
-    let crianca = inputcriancas.value;
+    let crianca = parseInt(inputcriancas.value);
 
-    let duracao = inputtime.value;
+    let duracao = parseInt(inputtime.value);
 
     let qtecarne = carnepp(duracao) * adultos + (carnepp(duracao) / 2 * crianca)
 
@@ -26,7 +26,7 @@ function calcular() {
 
     let  qtebebida = bebidapp(duracao) * adultos + (bebidapp(duracao) / 2 * crianca)
 
-    resultado.innerHTML = `<p>${qtecarne/1000} g de carne </p>`
+    resultado.innerHTML = `<p>${qtecarne/1000} Kg de carne </p>`
 
     resultado.innerHTML += `<p>${Math.ceil(qtecerveja/355)} latas de cerveja</p>`
 
@@ -39,7 +39,7 @@ function calcular() {
         if(duracao>=6){
             return 650
         }else{
-            400
+            return 400
         }
 
     }
@@ -49,7 +49,7 @@ function calcular() {
         if(duracao>=6){
             return 2000
         }else{
-            1200
+            return 1200
         }
 
     }
