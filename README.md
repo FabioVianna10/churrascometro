@@ -5,6 +5,8 @@
 Criado uma calculadora para churrasco denominado churrascometro, ela informa a quantidade de carne, bebida (agua ou guaraná) e cerveja de acordo com a quantidade
 de pessoas, de crianças e a duração da festa.
 
+LINK DO PROJETO https://fabiovianna10.github.io/churrascometro/
+
 
 # Técnologias Utilizadas:
 
